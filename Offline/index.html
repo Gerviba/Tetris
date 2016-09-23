@@ -1,0 +1,44 @@
+﻿<!-- Készítette: Szabó Gergely (Gerviba) | GNU GENERAL PUBLIC LICENSE 3 | https://github.com/Gerviba/Tetris -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hu-HU">
+	<head>
+		<title>Tetris</title>
+        <link rel="shortcut icon" type="image/png" href="0.png" id="favicon">
+		<link rel="stylesheet" type="text/css" href="normal.css">
+        <script>
+            var height = 14;
+            var width = 10;
+            var defaultSpeed = 400;
+		</script>
+		<script src="tetris_offline.js"></script>
+    </head>
+    <body onload="init()">
+        <h1>Gerviba's<br />Awesome Tetris</h1>
+        <div class="content">
+            <!-- 1:0px 2:32px 3:64px 4:96px 5:128px 6:160px 7:192px 8:224px 9:256px 10:288px -->
+            <div class="area" id="root"></div> 
+            <!-- <div class="entry c%COLOR%" id="uuid_%UUID%"></div> -->
+            <div class="opts">
+                <h1 id="gameover">Játék vége!</h1>
+				<h2 id="scoreboard">Pont: 0</h2>
+				<span>Mozgatás: A, D<br />Forgatás: Q, E<br />Indítás: Space, R<br />Gyors le: S</span>
+            </div>
+        </div>
+        <div class="dialog" id="dialog">
+            <h3>Új rekord!</h3><h4>Kérlek add meg a neved:</h4>
+            <form method="get" onsubmit="sendRecord(); return false;">
+                <input type="text" id="tetris-username" name="tetris_username" maxlength="16" />
+            </form>
+        </div>
+        <div class="toplist" id="toplist">
+            <h3>Toplista</h3>
+            <table border="0" cellspacing="0" cellpadding="0" id="table">
+            </table>
+            
+            <h4 class="blink">Space, R = Új játék</h4>
+            <h4>F = Toplista bezárása</h4>
+        </div>
+        
+    </body>
+</html>
