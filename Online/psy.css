@@ -1,9 +1,9 @@
 /** Készítette: Szabó Gergely (Gerviba) | GNU GENERAL PUBLIC LICENSE 3 | https://github.com/Gerviba/Tetris */
 
 @keyframes body {
-	0% { background-color: #FFA500; }
-	50% { background-color: #FFD700; }
-	100% { background-color: #FFA500; }
+    0% { background-color: #FFA500; }
+    50% { background-color: #FFD700; }
+    100% { background-color: #FFA500; }
 }
 
 ::-moz-selection {
@@ -16,117 +16,117 @@
 
 
 body {
-	width: 98%;
-	font-family: 'Press Start 2P', cursive;
-	margin: 0px auto;
-	background-color: #000000;
-	animation-name: body;
-	animation-duration: 0.05s;
-	animation-iteration-count: infinite;
+    width: 98%;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0px auto;
+    background-color: #000000;
+    animation-name: body;
+    animation-duration: 0.05s;
+    animation-iteration-count: infinite;
 }
 
 h1 {
-	display: block;
-	margin: 80px auto 30px auto;
-	text-align: center;
-	font-weight: normal;
-	color: #43c04f;
+    display: block;
+    margin: 80px auto 30px auto;
+    text-align: center;
+    font-weight: normal;
+    color: #43c04f;
 }
 
 h2 {
-	text-align: center;
-	font-weight: normal;
-	color: #e1e14d;
+    text-align: center;
+    font-weight: normal;
+    color: #e1e14d;
 }
 
 span {
-	width: 100%;
-	display: block;
-	text-align: center;
-	font-size: 12px;
-	color: #b9b69c;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #b9b69c;
 }
 
 div.content {
-	margin: 0px auto 20px auto;
+    margin: 0px auto 20px auto;
 }
 
 div.area {
-	border: 2px solid #555555;
-	margin: 0px auto 0px auto;
-	position: relative;
-	overflow: hidden;
-	
-	-webkit-transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025); 
-	-moz-transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025); 
-	-o-transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025); 
-	transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025);
+    border: 2px solid #555555;
+    margin: 0px auto 0px auto;
+    position: relative;
+    overflow: hidden;
+    
+    -webkit-transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025); 
+    -moz-transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025); 
+    -o-transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025); 
+    transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025);
 }
 
 div.opts {
-	width: 320px;
-	margin: 20px auto 0px auto;
+    width: 320px;
+    margin: 20px auto 0px auto;
 }
 
 @keyframes gameover {
-	0% { color: #cdcd46; }
-	49% { color: #cdcd46; }
-	50% { color: #e1e14d; }
-	100% { color: #e1e14d; }
+    0% { color: #cdcd46; }
+    49% { color: #cdcd46; }
+    50% { color: #e1e14d; }
+    100% { color: #e1e14d; }
 }
 
 div.opts h1 {
-	color: #cdcd46;
-	margin-top: 10px;
-	animation-name: gameover;
-	animation-duration: 0.15s;
-	animation-iteration-count: infinite;
-	display: none;
-	font-size: 26px;
-	font-weight: normal;
+    color: #cdcd46;
+    margin-top: 10px;
+    animation-name: gameover;
+    animation-duration: 0.15s;
+    animation-iteration-count: infinite;
+    display: none;
+    font-size: 26px;
+    font-weight: normal;
 }
 
 @keyframes falling {
-	0% { background-color: #a44c43; }
-	16% { background-color: #a44c43; }
-	17% { background-color: #3a84c5; }
-	32% { background-color: #3a84c5; }
-	33% { background-color: #a5ca61; }
-	48% { background-color: #a5ca61; }
-	49% { background-color: #ffe773; }
-	64% { background-color: #ffe773; }
-	65% { background-color: #6d4178; }
-	80% { background-color: #6d4178; }
-	81% { background-color: #8bd8d4; }
-	100% { background-color: #8bd8d4; }
+    0% { background-color: #a44c43; }
+    16% { background-color: #a44c43; }
+    17% { background-color: #3a84c5; }
+    32% { background-color: #3a84c5; }
+    33% { background-color: #a5ca61; }
+    48% { background-color: #a5ca61; }
+    49% { background-color: #ffe773; }
+    64% { background-color: #ffe773; }
+    65% { background-color: #6d4178; }
+    80% { background-color: #6d4178; }
+    81% { background-color: #8bd8d4; }
+    100% { background-color: #8bd8d4; }
 }
 
 div.entry {
-	height: 32px;
-	width: 32px;
-	position: absolute;
-	display: inline-block;
-	box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3) inset;
-	animation-name: falling;
-	animation-duration: 0.3s;
-	animation-iteration-count: infinite;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    display: inline-block;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3) inset;
+    animation-name: falling;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes bg {
-	0% { background-color: #a8a9aa; }
-	49% { background-color: #a8a9aa; }
-	50% { background-color: #FFFFFF; }
-	100% { background-color: #FFFFFF; }
+    0% { background-color: #a8a9aa; }
+    49% { background-color: #a8a9aa; }
+    50% { background-color: #FFFFFF; }
+    100% { background-color: #FFFFFF; }
 }
 
 div.background { 
-	background-color: #a8a9aa; 
-	height: 32px;
-	width: 32px;
-	position: absolute;
-	display: inline-block;
-	box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3) inset;
-	animation-name: bg;
-	animation-duration: 0.05s;
-	animation-iteration-count: infinite;
+    background-color: #a8a9aa; 
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    display: inline-block;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3) inset;
+    animation-name: bg;
+    animation-duration: 0.05s;
+    animation-iteration-count: infinite;
 }

@@ -10,81 +10,81 @@
 
 
 body {
-	width: 98%;
-	font-family: 'Press Start 2P', cursive;
-	margin: 0px auto;
-	background-color: #000000;
+    width: 98%;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0px auto;
+    background-color: #000000;
 }
 
 h1 {
-	display: block;
-	margin: 80px auto 30px auto;
-	text-align: center;
-	font-weight: normal;
-	color: #43c04f;
+    display: block;
+    margin: 80px auto 30px auto;
+    text-align: center;
+    font-weight: normal;
+    color: #43c04f;
 }
 
 h2 {
-	text-align: center;
-	font-weight: normal;
-	color: #e1e14d;
+    text-align: center;
+    font-weight: normal;
+    color: #e1e14d;
 }
 
 span {
-	width: 100%;
-	display: block;
-	text-align: center;
-	font-size: 12px;
-	color: #b9b69c;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #b9b69c;
 }
 
 div.content {
-	margin: 0px auto 20px auto;
+    margin: 0px auto 20px auto;
 }
 
 div.area {
-	border: 2px solid #555555;
-	margin: 0px auto 0px auto;
-	position: relative;
-	overflow: hidden;
+    border: 2px solid #555555;
+    margin: 0px auto 0px auto;
+    position: relative;
+    overflow: hidden;
     
-	/* Átmenet a p1(1, 0.015), p2(0.6, 1.025) négyzetes bézier görbe alapján  */
-	-webkit-transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025);
-	-moz-transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025); 
-	-o-transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025); 
-	transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025);
+    /* Átmenet a p1(1, 0.015), p2(0.6, 1.025) négyzetes bézier görbe alapján  */
+    -webkit-transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025);
+    -moz-transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025); 
+    -o-transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025); 
+    transition: border 10ms cubic-bezier(1.000, 0.015, 0.600, 1.025);
 }
 
 div.opts {
-	width: 320px;
-	margin: 20px auto 0px auto;
+    width: 320px;
+    margin: 20px auto 0px auto;
 }
 
 /* Játék vége villogás */
 @keyframes gameover {
-	0% { color: #cdcd46; }
-	49% { color: #cdcd46; }
-	50% { color: #e1e14d; }
-	100% { color: #e1e14d; }
+    0% { color: #cdcd46; }
+    49% { color: #cdcd46; }
+    50% { color: #e1e14d; }
+    100% { color: #e1e14d; }
 }
 
 div.opts h1 {
-	color: #cdcd46;
-	margin-top: 10px;
-	animation-name: gameover;
-	animation-duration: 0.15s;
-	animation-iteration-count: infinite;
-	display: none;
-	font-size: 26px;
-	font-weight: normal;
+    color: #cdcd46;
+    margin-top: 10px;
+    animation-name: gameover;
+    animation-duration: 0.15s;
+    animation-iteration-count: infinite;
+    display: none;
+    font-size: 26px;
+    font-weight: normal;
 }
 
 div.entry {
-	height: 32px;
-	width: 32px;
-	position: absolute;
-	display: inline-block;
-	box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3) inset;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    display: inline-block;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3) inset;
 }
 
 div.c1 { background-color: #a44c43; } /* Piros */
@@ -96,10 +96,10 @@ div.c6 { background-color: #8bd8d4; } /* Cián */
 
 /* Háttér négyzet */
 div.background { 
-	background-color: #a8a9aa; 
-	height: 32px;
-	width: 32px;
-	position: absolute;
-	display: inline-block;
-	box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3) inset;
+    background-color: #a8a9aa; 
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    display: inline-block;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3) inset;
 }
