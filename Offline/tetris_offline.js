@@ -686,7 +686,8 @@ function initToplist() {
 /** Toplista betöltése */
 function loadScores() {
     for (var i = 0; i < 10; ++i)
-        toplistScores[i] = [localStorage.getItem("NAME"+i), localStorage.getItem("SCORE"+i)];
+        if (localStorage.getItem("NAME"+i) != null && localStorage.getItem("SCORE"+i) != null)
+            toplistScores[i] = [localStorage.getItem("NAME"+i), localStorage.getItem("SCORE"+i)];
 }
 
 /** Toplista mentése */
